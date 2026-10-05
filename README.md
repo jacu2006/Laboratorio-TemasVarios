@@ -22,20 +22,25 @@ Debido a restricciones de la plataforma al subir directorios, los cuatro proyect
 ### Interfaz Principal / Salidas por Consola y MySQL
 
 * **Problema #1: Consultas SQL (3 Consultas):** Ejecución de tres consultas relacionales dentro del script `Consultas Parametrizadas.sql` sobre la base de datos `productosdb.sql`.
+
 ![Consulta 1 en MySQL](img/problema1_consulta1_sql.png)
 ![Consulta 2 en MySQL](img/problema1_consulta2_sql.png)
 ![Consulta 3 en MySQL](img/problema1_consulta3_sql.png)
 
 * **Problema #2: Cadenas (Armando Update / Insert) y Consultas Parametrizadas (Programa `Diccionarios`):** Construcción dinámica de comandos `INSERT` y `UPDATE` en C# utilizando objetos `Dictionary<string, object>`. Las funciones `GenerarInsert` y `GenerarUpdate` formatean automáticamente los campos y agregan el prefijo `@` a los valores para generar marcadores de posición parametrizados, mitagando el riesgo de Inyección SQL.
+
 ![Ejecución de Diccionarios - Consultas Parametrizadas](img/problema2_diccionarios.png)
 
 * **Problema #3: Métodos Sobrecargados:** Creación de una clase con múltiples firmas para un mismo método, permitiendo procesar datos bajo distintas lógicas según los parámetros recibidos.
+
 ![Ejecución de Métodos Sobrecargados](img/problema3_metodos_sobrecargados.png)
 
 * **Problema #4: Recursividad (¡Factorial!):** Función recursiva para el cálculo del factorial ($n!$), controlando explícitamente el caso base para evitar desbordamientos de pila (*StackOverflowException*).
+
 ![Cálculo Recursivo del Factorial](img/problema4_recursividad_factorial.png)
 
 * **Problema #5: Frecuencia:** Algoritmo en C# para recorrer colecciones o arreglos numéricos, contabilizando la repetición de elementos y desplegando los resultados en consola.
+
 ![Análisis y Conteo de Frecuencias](img/problema5_frecuencias.png)
 
 ---
